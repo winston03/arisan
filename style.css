@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Tenor+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* height: 200vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: linear-gradient(rgb(241, 240, 237) ,rgb(253, 255, 232) ,rgb(235, 255, 250), rgb(232, 255, 253));
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.title h1 {
+    font-size: 3.5em;
+}
+
+.menu {
+    display: none;
+}
+
+.starthree {
+  /* position: absolute; */
+  left: 50px;
+  animation: loops 5s linear infinite;
+  top: 50px;
+}
+
+.starfour {
+  right: 50px;
+  top: 250px;
+  animation: loop 5s linear infinite;
+}
+
+.starfive {
+  left: 50px;
+  top: 500px;
+  animation: loops 5s linear infinite;
+}
+
+.starsix {
+  right: 50px;
+  top: 750px;
+  animation: loop 5s linear infinite;
+}
+
+.starseven {
+  left: 50px;
+  top: 1000px;
+  animation: loops 5s linear infinite;
+}
+
+.stareight {
+  right: 50px;
+  top: 1250px;
+  animation: loop 5s linear infinite;
+}
+
+.starnine {
+  left: 50px;
+  top: 1500px;
+  animation: loops 5s linear infinite;
+}
+
+.starten {
+  right: 50px;
+  top: 1750px;
+  animation: loop 5s linear infinite;
+}
+
+.stareleven {
+  left: 50px;
+  top: 2000px;
+  animation: loops 5s linear infinite;
+}
+
+.startwelve {
+  right: 50px;
+  top: 2250px;
+  animation: loop 5s linear infinite;
+}
+
+.starthirteen {
+  left: 50px;
+  top: 2500px;
+  animation: loops 5s linear infinite;
+}
+
+.starfourteen {
+  right: 50px;
+  top: 2750px;
+  animation: loop 5s linear infinite;
+}
+
+.starfifteen {
+  left: 50px;
+  top: 3000px;
+  animation: loops 5s linear infinite;
+}
+
+.starthree,.starfifteen, .starfour, .starthree, .starfour, .starfive, .starsix, .starseven, .stareight, .starnine, .starten, .stareleven, .startwelve, .starthirteen, .starfourteen {
+  position: absolute;
+}
+
+header{
+    height: 12vh;
+    /* background: red; */
+    display: flex;
+    z-index: 1;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* backdrop-filter: blur(10px); */
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.roundone{
+    width: 700px;
+    background-image: radial-gradient(rgb(255, 173, 173), #fb9ade, rgb(93, 192, 216), rgb(235, 255, 107), rgb(255, 224, 183));
+    height: 700px;
+    border-radius: 100%;
+    filter: blur(200px);
+    position: fixed;
+    /* top: 50%; */
+    z-index: -1;
+    /* left: 50%; */
+    animation: pertama 10s infinite linear;
+}
+
+.roundtwo {
+    width: 700px;
+    background-image: radial-gradient(rgb(255, 255, 253), rgb(125, 255, 173), rgb(255, 227, 170), rgb(228, 228, 255), rgb(171, 165, 255));
+    height: 700px;
+    border-radius: 100%;
+    filter: blur(200px);
+    position: fixed;
+    /* top: 50%; */
+    z-index: -2;
+    /* left: 50%; */
+    animation: kedua 5s infinite linear;
+}
+
+@keyframes pertama {
+    0% {
+        transform: rotate(0deg)translate(450px);
+    }
+    
+    100% {
+        transform: rotate(360deg)translate(450px);
+    }
+}
+
+@keyframes kedua {
+    0% {
+        transform: rotate(360deg)translate(250px);
+    }
+    
+    100% {
+        transform: rotate(0deg)translate(250px);
+    }
+}
+
+.groupbox .container{
+    width: 280px;
+    position: relative;
+    transition: .2s ease;
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+
+.groupbox img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all .1s ease;
+    /* position: relative; */
+}
+
+.groupbox{
+    width: 80%;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    /* position: absolute; */
+    flex-wrap: wrap;
+}
+
+.nama {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 10px; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: .5s ease;
+    background-image: linear-gradient(to top, #000, transparent);
+}
+
+.starone {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    animation: loops 5s linear infinite;
+}
+
+.span {
+  width: 100%;
+  height: auto;
+}
+
+header div div {
+    width: 100%;
+    position: absolute;
+}
+
+.startwo{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    animation: loop 5s linear infinite;
+}
+
+@keyframes loop {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loops {
+  0%{
+      transform: rotate(360deg);
+  }
+  100%{
+      transform: rotate(0deg);
+  }
+}
+
+.title{
+    /* background: red; */
+    top: 70px;
+    width: 28%;
+    height: 20vh;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.nama .fa-instagram{
+    font-size: 35px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 6.5px;
+    /* position: fixed; */
+}
+
+.fa-instagram:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.nama .insta{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+.nama p{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.nama h1{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    transition: .6s ease;
+    bottom: -15px;
+}
+
+.groupbox .container:hover .nama h1{
+    bottom: 15px;
+}
+
+.groupbox .container:hover .nama{
+    height: 100%;
+}
+
+.container:hover img {
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,.5);
+    transition: .5s ease;
+}
+
+.group {
+    /* height: 100vh; */
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+    /* position: absolute; */
+    align-items: center;
+    /* background: grey; */
+}
+
+  .scrolimg {
+    max-width: 1200px;
+    /* background: red; */
+    width: 95%;
+    z-index: 3;
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+  }
+  
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .totop {
+    display: none;
+  }
+  
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    /* background: red; */
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 390px;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  hr {
+    width: 50%;
+    background-image: linear-gradient(to left, lime, hotpink ,red);
+    height: .5px;
+    outline: none;
+    border: none;
+  }
+
+  
+  .scrolimg .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+
+    .title{
+      width: 90%;
+    }
+
+    .title h1 {
+      font-size: 3rem;
+    }
+
+    .starone, .startwo {
+      height: 35px;
+      width: 35px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .span img {
+      display: none;
+    }
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+
+    .totop.active{
+      bottom: 30px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .totop {
+      text-decoration: none;
+      color: rgba(0,0,0,.7);
+    }
+
+    .totop i {
+      font-size: 22px;
+    }
+
+    .totop {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      right: 30px;
+      z-index: 6;
+      display: flex;
+      border-radius: 2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s;
+      justify-content: center;
+      box-shadow: 0px 10px 70px 0px rgba(0,0,0,.5);
+      align-items: center;
+      background: rgba(255,255,255,.7);
+      width: 60px;
+      backdrop-filter: blur(5px);
+      height: 60px;
+    }
+  }
