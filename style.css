@@ -101,12 +101,6 @@ h1{
   animation: loop 5s linear infinite;
 }
 
-.starfifteen {
-  left: 50px;
-  top: 3000px;
-  animation: loops 5s linear infinite;
-}
-
 .starthree,.starfifteen, .starfour, .starthree, .starfour, .starfive, .starsix, .starseven, .stareight, .starnine, .starten, .stareleven, .startwelve, .starthirteen, .starfourteen {
   position: absolute;
 }
